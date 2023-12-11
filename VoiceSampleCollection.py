@@ -20,7 +20,7 @@ with st.form("my_form"):
        wav_audio_data = st_audiorec() # tadaaaa! yes, that's it! :D
 
        # add some spacing and informative messages
-       col_info, col_space = st.columns([0.57, 0.43])
+       col_info, col_space =  st.columns([0.57, 0.43])
        with col_info:
            st.write('\n')  # add vertical spacer
            st.write('\n')  # add vertical spacer
