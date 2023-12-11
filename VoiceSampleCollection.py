@@ -5,7 +5,7 @@ import audio_recorder_streamlit as ars
 with st.form("my_form"):
 
    st.title("Audio Recorder")
-   audio_bytes = ars.audio_recorder("Apple",pause_threshold=3.0)
+   audio_bytes = ars.audio_recorder("Apple")
 
    if audio_bytes:
        st.audio(audio_bytes, format="audio/wav",sample_rate=44100)
