@@ -8,6 +8,9 @@ with st.form("my_form"):
 
    print(len(audio))
 
-   st.form_submit_button('Submit')
+   submit_clicked = st.form_submit_button('Submit')
+
+   if submit_clicked:
+      print(len(audio))
 
 st.write("Outside the form")
