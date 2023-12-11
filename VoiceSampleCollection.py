@@ -17,7 +17,7 @@ with st.form("my_form"):
        # by calling this function an instance of the audio recorder is created
        # once a recording is completed, audio data will be saved to wav_audio_data
 
-       wav_audio_data = st_audiorec() # tadaaaa! yes, that's it! :D
+       wav_audio_data = st_audiorec.st_audiorec() # tadaaaa! yes, that's it! :D
 
        # add some spacing and informative messages
        col_info, col_space =  st.columns([0.57, 0.43])
