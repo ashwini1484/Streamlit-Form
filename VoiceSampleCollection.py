@@ -1,7 +1,7 @@
 import streamlit as st
 
 with st.form("my_form"):
-   st.write("Inside the form")
+   st.write("**Record Voice Samples of the following words by clicking on the microphone icon**")
    slider_val = st.slider("Form slider")
    checkbox_val = st.checkbox("Form checkbox")
 
