@@ -16,4 +16,6 @@ with st.form("my_form"):
        # To get audio properties, use pydub AudioSegment properties:
        st.write(f"Frame rate: {audio.frame_rate}, Frame width: {audio.frame_width}, Duration: {audio.duration_seconds} seconds")
 
+   st.form_submit_button('Submit')
+
 st.write("Outside the form")
