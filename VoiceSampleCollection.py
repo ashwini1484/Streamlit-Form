@@ -6,7 +6,7 @@ import streamlit_mic_recorder as smr
 with st.form("my_form"):
 
    st.title("Audio Recorder")
-   audio_bytes = smr.mic_recorder(start_prompt="⏺️",stop_prompt="⏹️",just_once=False,key='recorder')
+   audio_bytes = smr.mic_recorder(start_prompt="Start",stop_prompt="Stop",just_once=False,key='recorder')
    if audio_bytes:
        st.audio(audio_bytes['bytes'], format="audio/wav")
 
