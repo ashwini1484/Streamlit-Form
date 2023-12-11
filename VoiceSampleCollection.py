@@ -8,7 +8,7 @@ with st.form("my_form"):
    audio_bytes = ars.audio_recorder("Apple")
 
    #if audio_bytes:
-       st.audio(audio_bytes, format="audio/wav")
+   st.audio(audio_bytes, format="audio/wav")
 
    submit_clicked = st.form_submit_button('Submit')
 
