@@ -1,7 +1,7 @@
 import streamlit as st
 #from audiorecorder import audiorecorder
 #import audio_recorder_streamlit as ars
-import streamlit_mic_recorder smr
+import streamlit_mic_recorder as smr
 
 with st.form("my_form"):
 
