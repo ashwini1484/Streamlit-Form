@@ -1,5 +1,5 @@
 import streamlit as st
-from st_audiorec import st_audiorec
+import st_audiorec
 
 with st.form("my_form"):
    def audiorec_demo_app():
