@@ -5,10 +5,9 @@ import audio_recorder_streamlit as ars
 with st.form("my_form"):
 
    st.title("Audio Recorder")
-   audio_bytes = ars.audio_recorder("Apple",pause_threshold=2.0, sample_rate=41_000)
-
-   #if audio_bytes:
-   st.audio(audio_bytes, format="audio/wav")
+   audio_bytes = audio_recorder()
+   if audio_bytes:
+       st.audio(audio_bytes, format="audio/wav")
 
    submit_clicked = st.form_submit_button('Submit')
 
