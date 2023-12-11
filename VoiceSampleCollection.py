@@ -10,9 +10,9 @@ with st.form("my_form"):
    if audio_bytes:
        st.audio(audio_bytes, format="audio/wav")
 
-   # submit_clicked = st.form_submit_button('Submit')
+   submit_clicked = st.form_submit_button('Submit')
 
-   # if submit_clicked:
-   #     print(len(audio_bytes))
+   if submit_clicked:
+      print(len(audio_bytes))
 
 st.write("Outside the form")
