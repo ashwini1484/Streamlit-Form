@@ -19,6 +19,7 @@
 
 import streamlit as st
 from streamlit_audio_recorder import st_audiorec
+from pydub import AudioSegment
 
 def main():
     st.title("Audio Recorder with Streamlit")
@@ -30,7 +31,14 @@ def main():
 
     if st.button("Stop Recording"):
         audio_recording.stop()
-        st.audio(audio_recording.get_audio(), format="audio/wav")
+        audio_data = audio_recording.get_audio()
+
+        if audio_data:
+            st.audio(audio_data, format="audio/wav", start_time=0)
+
+            # Save the audio to a file (optional)
+            audio_segment = AudioSegment.from_wav(audio_data)
+            audio_segment.export("recorded_audio.wav", format="wav")
 
 if __name__ == "__main__":
     with st.form("my_form"):

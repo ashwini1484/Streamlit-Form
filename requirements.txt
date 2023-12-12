@@ -1,4 +1,5 @@
 streamlit==1.28.0
 streamlit_audio_recorder
+pydub
 #audio_recorder_streamlit
 #streamlit_mic_recorder
